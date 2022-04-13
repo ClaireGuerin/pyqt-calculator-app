@@ -130,6 +130,9 @@ def main():
     # Show the calculator's GUI
     view = PyCalcUi()
     view.show()
+    # Create instances of the model and the controller
+    PyCalcCtrl(view=view)
+
     # Execute the calculator's main loop
     sys.exit(pycalc.exec_())
 
